@@ -1,0 +1,93 @@
+@import '../shared/styles/variables.scss';
+
+.mat-card {
+  padding: 14px;
+  border-radius: 4px;
+  width: 400px;
+}
+
+.headline {
+  margin: 10px;
+  padding: 10px;
+}
+
+.videos-container {
+  overflow: scroll;
+}
+
+.video-item {
+  min-height: 280px;
+  height: 280px;
+  margin: 5px;
+}
+
+.youtube-video-title {
+  font-size: $font-size-medium;
+  font-weight: 700;
+}
+
+.youtube-video-image {
+  width: 300px;
+}
+
+swiper {
+  width: 100vw;
+  height: 270px;
+  margin-bottom: 20px;
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #000000;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+
+    /* dimmer */
+    -webkit-filter: brightness(20%);
+    -moz-filter: brightness(20%);
+    //filter: url(#brightness); /* required for FF */
+    filter: brightness(20%);
+  }
+
+  .swiper-slide-active {
+    -webkit-filter: brightness(110%);
+    -moz-filter: brightness(110%);
+    //filter: url(#brightness); /* required for FF */
+    filter: brightness(110%);
+  }
+}
+
+// Breakpoints
+@media(min-width: map-get($ui-breakpoints, fhd)) {
+  swiper {
+    height: 355px;
+  }
+  .youtube-video-title {
+    font-size: $font-size-small;
+  }
+}
+
+@media(max-width: map-get($ui-breakpoints, md)) {
+  .youtube-video-title {
+    font-size: $font-size-xl;
+  }
+}
+
+
+
+
+
+
+

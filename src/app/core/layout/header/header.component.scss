@@ -1,0 +1,47 @@
+@import '../../../shared/styles/variables.scss';
+
+
+@mixin styling($header-height) {
+  .header {
+    min-height: $header-height;
+    max-height: $header-height;
+    height: $header-height;
+
+    .mat-toolbar {
+      min-height: $header-height;
+      max-height: $header-height;
+      height: $header-height;
+    }
+
+    .content {
+      height: $header-height;
+    }
+
+    .logo {
+      color: #ffffff;
+      height: calc(#{$header-height} / 4);
+    }
+
+    anms-big-input {
+      width: 85%;
+    }
+
+    .signin {
+      margin: 5px;
+    }
+
+  }
+}
+
+// Breakpoints
+@media(min-width: map-get($ui-breakpoints, lg) + 1px){
+  @include styling($header-height: 14vh);
+}
+
+@media (max-width: map-get($ui-breakpoints, lg)) {
+  @include styling($header-height: 19vh);
+}
+
+
+
+

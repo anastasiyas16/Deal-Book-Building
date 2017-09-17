@@ -1,0 +1,15 @@
+// Sidenav
+//.shoppingBasketSidenav {
+
+$close-button-height: 50px;
+
+.sidenav-content {
+  overflow: scroll;
+  height: 80vh;
+}
+
+.close-button {
+  height: $close-button-height;
+}
+
+//}

@@ -1,0 +1,58 @@
+<div>
+  <div fxLayout="column" fxLayoutAlign="start stretch">
+    <md-toolbar color="warn">
+      <div fxLayout="row" fxFlex="50" fxLayoutAlign="start center">
+        Settings
+      </div>
+      <div fxLayout="row" fxFlex="50" fxLayoutAlign="end center">
+        <button md-button><i class="material-icons md-32" [class.md-light]="true">cancel</i></button>
+      </div>
+    </md-toolbar>
+  </div>
+  <div fxLayout="column" fxLayoutAlign="start stretch" class="sidenav-content">
+    <md-tab-group>
+      <md-tab label="Tab 1">
+        <md-list>
+          <md-list-item>
+            <md-select placeholder="Themes" [(ngModel)]="selectedTheme" (ngModelChange)="changeTheme()">
+              <md-option *ngFor="let theme of themes" [value]="theme.value">{{theme.name}}</md-option>
+            </md-select>
+          </md-list-item>
+
+          <md-list-item>
+            <md-slide-toggle>Slide me!</md-slide-toggle>
+          </md-list-item>
+          <md-divider></md-divider>
+          <md-list-item>
+            <md-form-field>
+              <input mdInput [mdDatepicker]="picker" placeholder="Choose a date">
+              <md-datepicker-toggle mdSuffix [for]="picker"></md-datepicker-toggle>
+              <md-datepicker #picker></md-datepicker>
+            </md-form-field>
+          </md-list-item>
+          <md-divider></md-divider>
+          <md-list-item>
+            <md-radio-group>
+              <md-radio-button value="1">Option 1</md-radio-button>
+              <md-radio-button value="2">Option 2</md-radio-button>
+            </md-radio-group>
+          </md-list-item>
+          <md-divider></md-divider>
+          <md-list-item>
+            <md-slider thumbLabel="true" value="50" tickInterval="1"></md-slider>
+          </md-list-item>
+          <md-divider></md-divider>
+          <md-list-item>
+            <md-checkbox>Check me!</md-checkbox>
+          </md-list-item>
+          <md-divider></md-divider>
+        </md-list>
+      </md-tab>
+      <md-tab label="Tab 2">Content 2</md-tab>
+      <md-tab label="Tab 3">Content 3</md-tab>
+      <md-tab label="Tab 4">Content 4</md-tab>
+    </md-tab-group>
+  </div>
+</div>
+
+

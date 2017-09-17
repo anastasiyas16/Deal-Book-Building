@@ -1,0 +1,62 @@
+@import '../shared/styles/variables.scss';
+
+.search-card {
+  width: 90%;
+  margin: 20px;
+}
+
+.search-video-title {
+  font-size: $font-size-large;
+  font-weight: 700;
+}
+
+search-video-description {
+  font-size: $font-size-medium;
+  font-weight: 400;
+  color: #adadad;
+}
+
+.search-video-channel {
+  font-size: $font-size-medium;
+  font-weight: 500;
+}
+
+.search-image {
+  width: 20vw;
+  height: 20vh;
+}
+
+.paginator {
+  width: 92%;
+  margin: 20px;
+}
+
+// Breakpoints
+@media(min-width: map-get($ui-breakpoints, fhd)) {
+  .search-video-title {
+    font-size: $font-size-small;
+  }
+  .search-video-description {
+    font-size: $font-size-small;
+  }
+  .search-video-channel {
+    font-size: $font-size-small;
+  }
+}
+
+@media(max-width: map-get($ui-breakpoints, md)) {
+  .search-video-title {
+    font-size: $font-size-xl;
+  }
+  .search-video-description {
+    font-size: $font-size-large;
+  }
+  .search-image {
+    width: 30vw;
+    height: 20vh;
+  }
+  .search-video-channel {
+    font-size: $font-size-large;
+  }
+}
+

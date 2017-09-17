@@ -1,0 +1,34 @@
+@import 'themes/variables.theme.scss';
+
+// Components
+@import 'themes/components/buttons.theme.scss';
+@import 'themes/components/toolbar.theme.scss';
+@import 'themes/components/select.theme.scss';
+@import 'themes/components/sidenav.theme.scss';
+@import '../../shared/components/big-input/big-input.component.scss-theme';
+
+body {
+  // MAIN STYLES
+  background-color: #303030;
+  font-family: Roboto-Regular;
+  color: $theme-color-font-primary;
+}
+
+.example-fill-remaining-space {
+  // This fills the remaining space, by using flexbox.
+  // Every toolbar row uses a flexbox row layout.
+  flex: 1 1 auto;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  font-size: $theme-font-size-h1;
+}
+
+a {
+  text-decoration:none;
+}

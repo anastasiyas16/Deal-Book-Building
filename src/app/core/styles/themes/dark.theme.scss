@@ -1,0 +1,22 @@
+@import '../typography.scss';
+
+$oas-dark-primary: mat-palette($mat-grey, 800);
+$oas-dark-accent: mat-palette($mat-green, A700);
+$oas-dark-warn: mat-palette($mat-red, A700);
+
+$oas-dark-theme: mat-dark-theme(
+    $oas-dark-primary,
+    $oas-dark-accent,
+    $oas-dark-warn
+);
+
+.dark-theme {
+
+  @import '../common.scss';
+  @include anms-big-input-component-theme($oas-dark-theme);
+
+  a {
+    color: #ffffff;
+  }
+
+}

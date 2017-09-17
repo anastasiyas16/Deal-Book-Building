@@ -1,0 +1,24 @@
+@import '../typography.scss';
+@import '../common.scss';
+
+$oas-light-primary: mat-palette($mat-grey, 200, 500, 300);
+$oas-light-accent: mat-palette($mat-brown, 200);
+$oas-light-warn: mat-palette($mat-deep-orange, 200);
+
+$oas-light-theme: mat-light-theme(
+    $oas-light-primary,
+    $oas-light-accent,
+    $oas-light-warn
+);
+
+
+.default-theme {
+
+  @import '../common.scss';
+  @include anms-big-input-component-theme($oas-light-theme);
+
+  a {
+    color: #000000;
+  }
+
+}

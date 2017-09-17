@@ -1,0 +1,15 @@
+@import '../../../shared/styles/variables.scss';
+
+.footer {
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  text-align: center;
+  height: $footer-height;
+  width: 100%;
+  background: #ffffff;
+}
+
+.mat-toolbar {
+  height: $footer-height;
+}

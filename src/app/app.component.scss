@@ -1,0 +1,87 @@
+@import 'shared/styles/variables.scss';
+
+@mixin styling($header-height) {
+  .wrapper {
+    z-index: -2;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+
+
+    .content {
+      flex: 1 0 auto;
+      position: relative;
+      overflow: scroll;
+      height: calc(100vh - #{$header-height} - #{$footer-height});
+      margin-bottom: $footer-height;
+    }
+
+    md-sidenav {
+      width: 35vw;
+    }
+
+  }
+}
+
+// Breakpoints
+@media(min-width: map-get($ui-breakpoints, lg) + 1px){
+  @include styling($header-height: 14vh);
+}
+
+@media (max-width: map-get($ui-breakpoints, lg)) {
+  @include styling($header-height: 19vh);
+}
+
+
+/*
+@media (min-width: map-get($ui-breakpoints, sm)) {
+  .content {
+    height: calc(79.1vh - #{$footer-height});
+  }
+}
+
+@media (min-width: map-get($ui-breakpoints, md)) {
+  .content {
+    height: calc(72.1vh - #{$footer-height});
+  }
+}
+
+@media (min-width: map-get($ui-breakpoints, mlg)) {
+  .content {
+    height: calc(75.1vh - #{$footer-height});
+  }
+}
+
+@media (min-width: map-get($ui-breakpoints, lg)) {
+  .content {
+    height: calc(80.7vh - #{$footer-height});
+  }
+}
+
+@media (min-width: map-get($ui-breakpoints, xl)) {
+  .content {
+    height: calc(91.5vh - #{$footer-height});
+  }
+}
+
+@media (min-width: map-get($ui-breakpoints, hd)) {
+  .content {
+    height: calc(92.9vh - #{$footer-height});
+  }
+}
+
+@media (min-width: map-get($ui-breakpoints, fhd)) {
+  .content {
+    height: calc(93.9vh - #{$footer-height});
+  }
+}
+
+@media (min-width: map-get($ui-breakpoints, uhd)) {
+  .content {
+    height: calc(90vh - #{$footer-height});
+  }
+}
+*/
+
+
+

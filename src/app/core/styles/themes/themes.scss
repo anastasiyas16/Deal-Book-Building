@@ -1,0 +1,29 @@
+@import '~@angular/material/theming';
+
+@include mat-core();
+
+@import 'default.theme.scss';
+@import 'light.theme.scss';
+@import 'dark.theme.scss';
+
+@import '../../../shared/components/big-input/big-input.component.scss-theme';
+
+
+@mixin custom-components-theme($theme) {
+  @include anms-big-input-component-theme($theme);
+}
+
+// Set default theme
+@include angular-material-theme($oas-theme);
+//@include custom-components-theme($oas-theme);
+
+
+.light-theme {
+  @include angular-material-theme($oas-light-theme);
+  //@include custom-components-theme($oas-light-theme);
+}
+
+.dark-theme {
+  @include angular-material-theme($oas-dark-theme);
+  //@include custom-components-theme($oas-dark-theme);
+}

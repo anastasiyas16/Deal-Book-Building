@@ -1,0 +1,33 @@
+@import '~@angular/material/theming';
+
+@mixin anms-big-input-component-theme($theme) {
+  $primary: map-get($theme, primary);
+  $warn: map-get($theme, warn);
+  $accent: map-get($theme, accent);
+  $foreground: map-get($theme, foreground);
+  $background: map-get($theme, background);
+
+  anms-big-input {
+
+    .big-input {
+
+      input {
+        color: mat-color($foreground, text);
+        background-color: mat-color($background, card);
+      }
+
+      &.has-focus {
+        background-color: #ffffff;
+        box-shadow: 0 0 15px 2px rgba(mat-color($warn), .8),
+          0 0 15px 2px rgba(mat-color($warn), .8),
+          0 0 15px 2px rgba(mat-color($warn), .8);
+
+        input {
+          color: #000000;
+          background-color: #ffffff;
+        }
+      }
+    }
+  }
+}
+
