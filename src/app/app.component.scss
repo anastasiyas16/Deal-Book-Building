@@ -11,8 +11,8 @@
     .content {
       flex: 1 0 auto;
       position: relative;
-      overflow: scroll;
-      height: calc(100vh - #{$header-height} - #{$footer-height});
+      // overflow: scroll;
+      // height: calc(100vh - #{$header-height} - #{$footer-height});
       margin-bottom: $footer-height;
     }
 
