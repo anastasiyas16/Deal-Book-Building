@@ -1,52 +1,7 @@
 <header class="header">
     <div fxLayout="row" fxFlex="100" fxLayoutAlign="stretch" class="content">
       <div fxLayout="column" fxFlex="100" fxLayoutAlign="start stretch" class="content">
-        <div fxLayout="column" fxFlex="70">
-          <md-toolbar color="primary">
-            <div fxLayout="row" fxFlex="100">
-              <div fxLayout="row" fxFlex="25" fxLayoutAlign="start center">
-                <button md-button (click)="sendSignalToToggleSideNav()"><i class="material-icons" [class.md-dark]="false">dehaze</i></button>
-                <button md-button [routerLink]="['/']">
-                  <img src="assets/images/logo.png" class="logo" />
-                </button>
-              </div>
-              <div fxLayout="row" fxFlex="50" fxLayoutAlign="center center">
-                <anms-big-input placeholder="Search videos, games and channels" [value]="searchQuery" (keyup)="onSearchChange($event.target.value)" (keyup.enter)="onSearch()" (keyup.escape)="onSearchReset()">
-                  <anms-big-input-action icon="cancel" color="warn" (action)="onSearchReset()" mdTooltip="Reset" mdTooltipPosition="after">
-                  </anms-big-input-action>
-                </anms-big-input>
-              </div>
-              <div fxLayout="row" fxFlex="25" fxLayoutAlign="end center">
-                <md-icon>file_upload</md-icon>
-                <md-icon>apps</md-icon>
-                <button md-icon-button [mdMenuTriggerFor]="menu">
-                  <md-icon>more_vert</md-icon>
-                </button>
-                <md-menu #menu="mdMenu">
-                  <button md-menu-item>
-                    <md-icon>dialpad</md-icon>
-                    <span>Redial</span>
-                  </button>
-                  <button md-menu-item disabled>
-                    <md-icon>voicemail</md-icon>
-                    <span>Check voicemail</span>
-                  </button>
-                  <button md-menu-item>
-                    <md-icon>notifications_off</md-icon>
-                    <span>Disable alerts</span>
-                  </button>
-                </md-menu>
-                <button md-mini-fab color="accent" (click)="openDialog()">
-                  <md-icon [class.md-light]="true">person</md-icon>
-                </button>
-              </div>
-            </div>
-          </md-toolbar>
-        </div>
         <div fxLayout="column" fxFlex="30" fxLayoutAlign="end center">
-
-
-
           <nav md-tab-nav-bar>
             <a md-tab-link *ngFor="let navLink of navLinks" [routerLink]="navLink.path" routerLinkActive #rla="routerLinkActive" [active]="rla.isActive">
               {{navLink.label}}

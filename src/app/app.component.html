@@ -1,20 +1,9 @@
 <div class="wrapper" [class.dark-theme]="darkTheme" [class.light-theme]="lightTheme">
-
   <md-progress-bar *ngIf="showProgressBar" color="warn" mode="indeterminate"></md-progress-bar>
-
   <md-sidenav-container>
-
-    <oas-header (sidenavToggleEvent)="onSidenavToggleEvent($event)"></oas-header>
-
     <div class="content" [@routerTransition]="routeroutlet.isActivated && routeroutlet.activatedRoute.routeConfig.path">
       <router-outlet #routeroutlet="outlet"></router-outlet>
     </div>
-
-    <md-sidenav #sidenav mode="push" align="start" class="sidenav"> <!-- modes = {side, over, push} -->
-      <oas-settings-sidenav></oas-settings-sidenav>
-    </md-sidenav>
-
-    <oas-footer></oas-footer>
   </md-sidenav-container>
 </div>
 

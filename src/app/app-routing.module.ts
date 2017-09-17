@@ -8,15 +8,11 @@
  */
 import {ModuleWithProviders} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
-import {YoutubePlayerComponent} from "./youtube-player/youtube-player.component";
 import {CreditsComponent} from "./credits/credits.component";
 
 const APP_ROUTES: Routes = [
   {path: '', pathMatch: 'full', redirectTo: 'home'},
-  {path: 'home', loadChildren: './home/home.module#HomeModule'},
-  {path: 'video/:id', component: YoutubePlayerComponent, children: [], canActivate: []},
-  {path: 'search', loadChildren: './search/search.module#SearchModule'},
-  {path: 'credits', component: CreditsComponent, children: [], canActivate: []},
+  {path: 'home', component: CreditsComponent, children: [], canActivate: []},
 ];
 
 export const APP_ROUTING_MODULE: ModuleWithProviders = RouterModule.forRoot(APP_ROUTES, {
