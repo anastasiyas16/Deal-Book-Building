@@ -1,0 +1,111 @@
+.credits-card {
+  
+}
+
+.credits-header-image {
+  background-image: url('../../assets/images/avatar.png');
+  background-size: cover;
+}
+.top-area {
+  height: 40vh;
+  padding-top: 20px;
+}
+.mid-area {
+  height: 5vh;
+}
+.bottom-area {
+  height: 50vh;
+}
+.graph-area {
+  width: 40vw;
+}
+.flex-area {
+  width: 50vw;
+}
+.primary-area {
+  width: 70vw;
+  
+}
+.note-area {
+  width: 20vw;
+}
+
+div md-card {
+  height: 100%;
+}
+.flex-div {
+  width: 50vw;
+  overflow-x: auto;
+}
+.flex-div table {
+  width: 100%;
+}
+.flex-btn-div {
+  position: absolute;
+  text-align: right;
+  bottom: 0;
+  right: 0;
+}
+
+.primary-div {
+  width: 70vw;
+  overflow-x: auto;
+}
+.primary-div table {
+  width: 100%;
+}
+th {
+  text-align: center;
+}
+thead th {
+  background-color: rgba(192,192,192, 0.5);
+}
+.primary-btn-div {
+  position: absolute;
+  margin-top: 10px;
+  padding-left: 30vw;
+  bottom: 0;
+}
+
+.primary-title {
+  text-align: left !important;
+}
+
+md-card-content {
+  height: 100%;
+  position: relative !important;
+}
+
+.content-bottom {
+  position: absolute;
+  bottom: 0;
+}
+
+.note-textarea {
+  height: 80%;
+}
+
+.note-textarea textarea {
+  height: 97% !important;
+}
+.filter-div {
+  margin-left: 42vw;
+  margin-bottom: 5px;
+}
+.dialog-content {
+  width: 500px;
+  height: 300px;
+}
+.flex-btn {
+  text-align: center;
+}
+.flex-add-div p {
+  width: 100px;
+  float: left;
+  text-align: right;
+  margin-right: 10px;
+  margin-top: 25px;
+}
+.mdl-textfield {
+  width: 80px;
+}

@@ -22,7 +22,6 @@ import {BigInputActionComponent} from "../../shared/components/big-input/big-inp
     MdIconModule,
     MdTabsModule,
     MdFormFieldModule,
-    MdCardModule,
     MdInputModule,
     MdTooltipModule,
     MdMenuModule,

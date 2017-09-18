@@ -8,17 +8,19 @@ import {APP_ROUTING_MODULE} from "./app-routing.module";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {CoreModule} from "./core/core.module";
 import {RouterModule} from "@angular/router";
-import {MdSidenavModule, MdCardModule, MdProgressBarModule, MdIconModule} from "@angular/material";
+import {MdSidenavModule, MdCardModule, MdProgressBarModule, MdIconModule, MdButtonModule} from "@angular/material";
+
 import {SettingsSidenavModule} from "./core/layout/sidenavs/settings-sidenav/settings-sidenav.module";
 import {Ng2Webstorage} from "ngx-webstorage";
-import {CreditsComponent} from './credits/credits.component';
+import {DealComponent,DialogDataExample, DialogDataExampleDialog} from './deal/deal.component';
 import {SigninDialogComponent} from "./shared/signin/signin-dialog.component";
 
 @NgModule({
   declarations: [
     AppComponent,
-    CreditsComponent,
-    SigninDialogComponent
+    DealComponent,
+    SigninDialogComponent,
+    DialogDataExample, DialogDataExampleDialog
   ],
   entryComponents: [SigninDialogComponent],
   imports: [
@@ -34,12 +36,13 @@ import {SigninDialogComponent} from "./shared/signin/signin-dialog.component";
     MdSidenavModule,
     MdCardModule,
     MdIconModule,
+    MdButtonModule,
     SettingsSidenavModule,
     MdProgressBarModule
   ],
   providers: [
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent,DialogDataExample, DialogDataExampleDialog]
 })
 export class AppModule {
 }

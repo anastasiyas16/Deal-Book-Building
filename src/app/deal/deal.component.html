@@ -1,0 +1,206 @@
+<div class="top-area">
+  <div fxLayout="row" fxFlex fxLayoutAlign="center center">
+    <md-card class="graph-area">
+      <md-card-content>
+        Graph area
+      </md-card-content>
+    </md-card>
+    <md-card class="flex-area">
+      <md-card-content>
+        <div>
+          Flex History
+        </div>
+        <div class="flex-div">
+          <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp">
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Base</th>
+                <th>Spread %</th>
+                <th>OID</th>
+                <th>Upfront fee</th>
+                <th>Effective Spread</th>
+                <th>Yield</th>
+                <th>Amount (mln)</th>
+                <th>Int. Amt (mln)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>08/10/17 09:07 AM</td>
+                <td>25</td>
+                <td>$2.90</td>
+                <td>$2.90</td>
+                <td>$2.90</td>
+                <td>$2.90</td>
+                <td>$2.90</td>
+                <td>$2.90</td>
+                <td>$2.90</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="flex-btn-div">
+          <dialog-data-example></dialog-data-example>
+        </div>
+        <div class="content-bottom">
+          * Effective Spread=Avg. spread + (Avg. OID/4) &nbsp;&nbsp;&nbsp;  * Yield=LIBOR + Effective Spread
+        </div>
+      </md-card-content>
+    </md-card>
+  </div>
+</div>
+<div class="mid-area">
+</div>
+<div class="bottom-area">
+  <div fxLayout="row" fxFlex fxLayoutAlign="center center">
+    <md-card class="primary-area">
+      <md-card-content>
+        <div class="hide-interested filter-div">
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
+                Hide Interested
+            </button>
+        </div>
+        <div class="hide-commited-allocation filter-div">
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
+                Hide Committed
+            </button>
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
+                Hide Allocations
+            </button>
+        </div>
+
+        <div class="primary-div">
+          <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp">
+            <thead>
+              <tr>
+                <th colspan="5" rowspan="1" class="primary-title">Primary</th>
+                <th colspan="18">
+                  Term Loan A 
+                  <hr>
+                </th>
+              </tr>
+              <tr>
+                <th colspan="5"></th>
+                <th colspan="6">
+                  Interested
+                  <hr>
+                </th>
+                <th colspan="6">
+                  Committed
+                  <hr>
+                </th>
+                <th colspan="6">
+                  Allocation
+                  <hr>
+                </th>
+              </tr>
+              <tr>
+                <th rowspan="1">Investor</th>
+                <th rowspan="1">Sales person</th>
+                <th rowspan="1">Location</th>
+                <th rowspan="1">Status</th>
+                <th rowspan="1">T/P</th>
+                <th>Amount (mln)</th>
+                <th>Margin</th>
+                <th>Upfront fee</th>
+                <th>OID</th>
+                <th>Notes</th>
+                <th>Last Update</th>
+                <th>Amount (mln)</th>
+                <th>Margin</th>
+                <th>Upfront fee</th>
+                <th>OID</th>
+                <th></th>
+                <th>Last Update</th>
+                <th>Amount (mln)</th>
+                <th>Margin</th>
+                <th>Upfront fee</th>
+                <th>OID</th>
+                <th></th>
+                <th>Last Update</th>
+              </tr>
+            </thead>
+            <tfoot>
+              <tr>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th>Total</th>
+                <th>Average</th>
+                <th>Average</th>
+                <th>Average</th>
+                <th></th>
+                <th></th>
+                <th>Total</th>
+                <th>Average</th>
+                <th>Average</th>
+                <th>Average</th>
+                <th></th>
+                <th></th>
+                <th>Total</th>
+                <th>Average</th>
+                <th>Average</th>
+                <th>Average</th>
+                <th></th>
+                <th></th>
+              </tr>
+              <tr>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th>12</th>
+                <th>3.5</th>
+                <th>4.5</th>
+                <th>3.7</th>
+                <th></th>
+                <th></th>
+                <th>15</th>
+                <th>5.5</th>
+                <th>1.5</th>
+                <th>5.6</th>
+                <th></th>
+                <th></th>
+                <th>55</th>
+                <th>3.5</th>
+                <th>2.3</th>
+                <th>7.8</th>
+                <th></th>
+                <th></th>
+              </tr>
+            </tfoot>
+            <tbody>
+            </tbody>
+          </table>
+        </div>
+        <div class="primary-btn-div">
+          <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
+          Add
+          </button>
+          <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+          Save
+          </button>
+          <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-js-ripple-effect">
+          Cancel
+          </button>
+        </div>
+      </md-card-content>
+    </md-card>
+    <md-card class="note-area">
+      <md-card-content>
+        <div class="mdl-textfield mdl-js-textfield note-textarea">
+          <textarea class="mdl-textfield__input" type="text" rows= "3" id="sample5" ></textarea>
+          <label class="mdl-textfield__label" for="sample5">Note</label>
+        </div>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+          <input class="mdl-textfield__input" type="text" id="sample3">
+          <label class="mdl-textfield__label" for="sample3">Text...</label>
+        </div>
+      </md-card-content>
+    </md-card>
+  </div>
+</div>

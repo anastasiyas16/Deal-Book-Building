@@ -8,11 +8,11 @@
  */
 import {ModuleWithProviders} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
-import {CreditsComponent} from "./credits/credits.component";
+import {DealComponent} from "./deal/deal.component";
 
 const APP_ROUTES: Routes = [
   {path: '', pathMatch: 'full', redirectTo: 'home'},
-  {path: 'home', component: CreditsComponent, children: [], canActivate: []},
+  {path: 'home', component: DealComponent, children: [], canActivate: []},
 ];
 
 export const APP_ROUTING_MODULE: ModuleWithProviders = RouterModule.forRoot(APP_ROUTES, {
